@@ -1,9 +1,10 @@
 name: Release Build
 
 on:
+  pull_request:
+    branches: [main, develop]
   push:
-    branches:
-      - master
+    branches: [main, develop]
     tags:
       - v*
     paths-ignore:
